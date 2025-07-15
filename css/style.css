@@ -1,12 +1,8 @@
 /* ff(font family), fw(font weight), fs(font Size)*/
 :root{
-    --clr-accent-400: hsl(12, 88%, 59%);
-    --clr-accent-100: hsl(13, 100%, 96%); 
-
-    --clr-primary-400: hsl(228, 39%, 23%) ;
-
-    --clr-neutral-100:  hsl(233, 12%, 13%) ;
-    --clr-neutral-900: hsl(0, 0%, 98%);
+    --primary-color: #4891ff;
+    --light-color: #f4f4f6;
+    --dark-color: #111;
 
     --ff-primary: 'Be Vietnam Pro', sans-serif;
 
@@ -66,6 +62,7 @@ html,body{
 /* Set core body defaults */
 body {
   line-height: 1.5;
+  font-family: "Roboto", sans-serif;
 }
 
 
@@ -78,3 +75,98 @@ svg {
 }
 
 
+svg {
+  vertical-align: middle;
+  margin-right: 6px;
+  color: black; /* or any color */
+}
+
+
+.primary-header {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.inner-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.container a img{
+  height: 25px;
+}
+
+.primary-navigation {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.nav-list{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-list li {
+  display: inline;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+
+.nav-list a:hover {
+  color: var(--primary-color);
+}
+
+button {
+  background-color: var(--light-color);
+  border: none;
+  padding: 8px 15px;
+  border-radius: 7px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  color: var(--primary-color);
+}
+
+button svg {
+  width: 20px;
+  height: 20px;
+}
+
+button svg:hover{
+  color: var(--primary-color);
+}
+
+.hero .container{
+  height: 550px;
+  background: url(/images/hero-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
