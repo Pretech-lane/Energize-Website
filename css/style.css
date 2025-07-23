@@ -81,6 +81,15 @@ svg {
   color: black; /* or any color */
 }
 
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+}
+
 
 .primary-header {
   padding: 20px;
@@ -291,4 +300,262 @@ button svg:hover{
   flex-direction: column;
   align-items: center;
   gap: 20px
+}
+
+.video-btn{
+  background-color: var(--primary-color);
+  color: var(--light-color) ;
+}
+
+.video-btn:hover{
+  background-color:#2a75e6;
+  color: #eae0e0;
+}
+
+/* testimonials */
+.testimonials{
+  padding: 40px 0;
+  background-color: var(--dark-color);
+  color: #fff;
+}
+.testimonials-heading{
+  font-weight: normal;
+  margin: 40px 0 20px;
+}
+
+.text{
+  width: 700px;
+  margin-bottom: 40px;
+  font-size: 2.2rem;
+  line-height: 1.4;
+}
+
+.testimonials .container{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.testimonials-grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+}
+
+.card{
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 20px ;
+}
+
+.card p{
+  line-height: 1.4;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.card p strong{
+  font-weight: bold;
+}
+
+/* Pricing */
+.pricing{
+  margin: 40px 0;
+}
+
+.container-sm{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.text-xl{
+  font-size: 2.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 40px 0 20px;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-md{
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 20px 0 10px;
+  color: var(--dark-color);
+}
+
+.pricing-grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+/* Pricing Card 1 */
+
+.bg-light{
+  background-color: var(--light-color);
+}
+
+.pricing-subheading{
+  margin-bottom: 30px;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.pricing-text{
+  margin-bottom:30px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+hr{
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.pricing ul{
+  margin: 30px 0;
+}
+
+.pricing ul li{
+  margin-bottom: 20px;
+}
+
+.btn{
+  padding: 13px 20px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.btn-block{
+  display: block;
+  width: 100%;
+}
+
+.btn-primary{
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* Pricing Card 2 */
+.bg-black{
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+.pricing-card-price{
+  margin-bottom: 30px;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.pricing-footer{
+  margin: 30px 0;
+}
+
+/* FAQ */
+.faq{
+  padding: 30px 0;
+}
+
+ul{
+  list-style: none;
+}
+
+.faq ul.faq-menu{
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ddd;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: large;
+  cursor: pointer;
+}
+
+.faq ul li{
+  margin: 5px;
+}
+
+.faq ul.faq-menu li.active{
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+
+.faq .faq-group{
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
+.faq .faq-group .faq-group-header{
+  padding: 20px 0;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.faq .faq-group .faq-group-header h4{
+  font-weight: 600;
+  width: 95%;
+}
+
+.faq .faq-group .faq-group-header i{
+  position: absolute;
+  right: 0;
+  top: 35px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.fas{
+  font-weight: 900;
+}
+
+/* Footer */
+.footer{
+  padding: 40px 0;
+}
+.bg-dark{
+  background-color: #000;
+  color: #fff;
+}
+.footer-container{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+ .footer-links {
+  list-style: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer ul li{
+  line-height: 2.5;
+}
+
+.footer-links a{
+  text-decoration: none;
+  color: #ddd;
+  font-size: 18px;
+  font-weight: normal;
 }
