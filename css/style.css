@@ -90,6 +90,20 @@ p {
   unicode-bidi: isolate;
 }
 
+.btn {
+  display: inline-block;
+  padding: 13px 20px;
+  background: var(--light-color);
+  color: #333;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.5s;
+}
+
 
 .primary-header {
   padding: 20px;
@@ -558,4 +572,175 @@ ul{
   color: #ddd;
   font-size: 18px;
   font-weight: normal;
+}
+
+/* Hamburger Button */
+.hamburger-button{
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.hamburger-button .hamburger-line{
+  width: 30px;
+  height: 3px;
+  background: #333;
+  margin: 6px 0;
+}
+
+/* Mobile Menu */
+.mobile-menu{
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 250px;
+  height: 100%;
+  z-index: 100;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+}
+
+.mobile-menu.active{
+  right: 0;
+}
+
+.mobile-menu ul{
+  margin-top: 100px;
+  padding-right: 10px;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+.mobile-menu ul li{
+  margin: 10px 0;
+}
+
+.mobile-menu ul li a{
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.3s;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 20px;
+}
+
+.mobile-menu .btn{
+  padding: 10px 20px;
+  display: block;
+  font-weight: 600;
+}
+
+/* Media Queries */
+@media (max-width: 770px){
+  .text-xxl{
+    font-size: 2.5rem;
+  }
+  .hero-heading{
+    font-size: 2.5rem;
+  }
+}
+
+
+
+@media (max-width: 670px) {
+  .inner-container {
+    display: none;
+  }
+
+  .primary-header .hamburger-button {
+    display: block;
+  }
+
+  .hero .hero-container {
+    background: url('/images/hero-bg-mobile.png') no-repeat;
+    background-size: 350px 400px;
+    background-position: bottom;
+    height: 770px;
+  }
+
+  .hero .hero-content,
+  .hero .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero .hero-buttons .primary-btn {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+  }
+
+  .hero .hero-buttons .secondary-btn{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .testimonials .container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .testimonials .testimonials-heading {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .testimonials .testimonials-grid,
+  .pricing .pricing-grid,
+  .footer .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer .card {
+    margin-right: 0;
+  }
+
+  .footer .footer-grid > div {
+    text-align: center;
+  }
+
+  /* Text */
+  .text-xl {
+    font-size: 1.9rem;
+  }
+
+  .text-lg {
+    font-size: 1.5rem;
+  }
+
+  .text-md {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .text-xxl {
+    font-size: 2rem;
+  }
+
+  .faq-menu li {
+      font-size: 11px;
+  }
+
+  .faq-group-header h4 {
+      font-size: 11px;
+  }
+  .faq-group-body p {
+      font-size: 11px;
+  }
+
+  .footer-text {
+      font-size: 11px;
+  }
+
+  .footer-logo img {
+      width: 150px;
+    }
 }
